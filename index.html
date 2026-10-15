@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VIHDA: campaña educativa sobre el VIH, el sida, la prevención y la no discriminación.">
+    <meta name="theme-color" content="#921f35">
+    <title>VIHDA | Infórmate, Previene y Actúa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <a class="logo" href="#inicio">VIH<span>DA</span></a>
+
+        <nav aria-label="Navegación principal">
+            <a href="#informacion">Información</a>
+            <a href="#prevencion">Prevención</a>
+            <a href="#mitos">Mitos y realidades</a>
+            <a href="#campana">Campaña</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-contenido">
+                <span class="etiqueta">CAMPAÑA DE PREVENCIÓN Y SENSIBILIZACIÓN</span>
+
+                <h1>La información salva vidas.</h1>
+
+                <p>
+                    Conocer el VIH es prevenir. Informarse es romper prejuicios.
+                    Construyamos una sociedad con más conocimiento, respeto y empatía.
+                </p>
+
+                <div class="hero-botones">
+                    <a href="#informacion" class="boton boton-principal">
+                        Conocer más
+                    </a>
+                    <a href="#prevencion" class="boton boton-secundario">
+                        ¿Cómo prevenir?
+                    </a>
+                </div>
+            </div>
+
+            <div class="lazo" aria-label="Símbolo de concientización">
+                🎗️
+            </div>
+        </section>
+
+        <section class="seccion" id="informacion">
+            <div class="titulo-seccion">
+                <span>APRENDE Y COMPRENDE</span>
+                <h2>¿Qué es el VIH y qué es el sida?</h2>
+                <p>Conocer la diferencia es el primer paso para combatir la desinformación.</p>
+            </div>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <div class="icono">🧬</div>
+                    <h3>¿Qué es el VIH?</h3>
+                    <p>
+                        El virus de la inmunodeficiencia humana ataca el sistema
+                        inmunitario. Sin tratamiento, puede debilitar las defensas
+                        del organismo.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="icono">🩺</div>
+                    <h3>¿Qué es el sida?</h3>
+                    <p>
+                        Es la fase más avanzada de la infección por VIH.
+                        No todas las personas con VIH desarrollan sida; el
+                        tratamiento ayuda a evitar su progresión.
+                    </p>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="icono">💚</div>
+                    <h3>Vivir con VIH</h3>
+                    <p>
+                        Con tratamiento antirretroviral y seguimiento médico,
+                        las personas con VIH pueden llevar vidas largas y saludables.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion seccion-suave" id="prevencion">
+            <div class="titulo-seccion">
+                <span>PROTEGE TU SALUD</span>
+                <h2>La prevención está en tus manos</h2>
+                <p>Infórmate y busca orientación en los servicios de salud.</p>
+            </div>
+
+            <div class="lista-prevencion">
+                <article class="prevencion-item">
+                    <span>01</span>
+                    <div>
+                        <h3>Usa preservativos</h3>
+                        <p>
+                            Su uso correcto y constante reduce el riesgo de
+                            transmisión sexual del VIH y de otras infecciones.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prevencion-item">
+                    <span>02</span>
+                    <div>
+                        <h3>Realízate la prueba</h3>
+                        <p>
+                            Conocer tu estado serológico permite recibir orientación
+                            y acceder oportunamente al tratamiento si fuera necesario.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prevencion-item">
+                    <span>03</span>
+                    <div>
+                        <h3>Conoce la PrEP y la PEP</h3>
+                        <p>
+                            Son opciones médicas para prevenir el VIH.
+                            La PEP debe iniciarse lo antes posible, dentro de las
+                            72 horas posteriores a una posible exposición.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="prevencion-item">
+                    <span>04</span>
+                    <div>
+                        <h3>Busca atención médica</h3>
+                        <p>
+                            Los profesionales de salud pueden orientarte sobre
+                            prevención, pruebas y tratamiento.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion" id="mitos">
+            <div class="titulo-seccion">
+                <span>ROMPAMOS LOS PREJUICIOS</span>
+                <h2>Mitos y realidades</h2>
+                <p>Lee cada afirmación y comprueba cuánto sabes.</p>
+            </div>
+
+            <div class="cuestionario">
+                <article class="pregunta">
+                    <h3>1. El VIH se transmite por abrazar a una persona.</h3>
+                    <div class="opciones">
+                        <button type="button" data-respuesta="incorrecta"
+                            data-grupo="p1">Verdadero</button>
+                        <button type="button" data-respuesta="correcta"
+                            data-grupo="p1">Falso</button>
+                    </div>
+                    <p class="resultado" id="r-p1" aria-live="polite"></p>
+                </article>
+
+                <article class="pregunta">
+                    <h3>2. Una persona con VIH puede vivir muchos años con tratamiento.</h3>
+                    <div class="opciones">
+                        <button type="button" data-respuesta="correcta"
+                            data-grupo="p2">Verdadero</button>
+                        <button type="button" data-respuesta="incorrecta"
+                            data-grupo="p2">Falso</button>
+                    </div>
+                    <p class="resultado" id="r-p2" aria-live="polite"></p>
+                </article>
+
+                <article class="pregunta">
+                    <h3>3. VIH y sida significan exactamente lo mismo.</h3>
+                    <div class="opciones">
+                        <button type="button" data-respuesta="incorrecta"
+                            data-grupo="p3">Verdadero</button>
+                        <button type="button" data-respuesta="correcta"
+                            data-grupo="p3">Falso</button>
+                    </div>
+                    <p class="resultado" id="r-p3" aria-live="polite"></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion analisis" id="realidad">
+            <div class="titulo-seccion">
+                <span>REFLEXIÓN SOCIAL</span>
+                <h2>La realidad en nuestra población</h2>
+            </div>
+
+            <div class="analisis-contenido">
+                <p>
+                    El VIH continúa siendo un problema de salud pública que requiere
+                    información, prevención y acceso oportuno a los servicios de salud.
+                    A pesar de los avances médicos, persisten la desinformación,
+                    el temor a realizarse pruebas y los prejuicios hacia las personas
+                    que viven con el virus.
+                </p>
+
+                <p>
+                    La educación sexual basada en evidencia, el diagnóstico oportuno
+                    y el acceso al tratamiento son fundamentales para prevenir nuevas
+                    infecciones. La discriminación también puede impedir que las
+                    personas busquen orientación y atención médica.
+                </p>
+
+                <p>
+                    Como respuesta, esta campaña propone difundir información
+                    confiable mediante una página web, las redes sociales y un
+                    código QR. Buscamos promover decisiones responsables, el respeto
+                    y una cultura de prevención en nuestra comunidad.
+                </p>
+
+                <p class="nota">
+                    Para incorporar cifras sobre Perú o Cusco, consulta las fuentes
+                    oficiales indicadas al final de esta página e incluye el año
+                    de cada dato.
+                </p>
+            </div>
+        </section>
+
+        <section class="campana" id="campana">
+            <div class="campana-contenido">
+                <span class="etiqueta">NUESTRO MENSAJE</span>
+                <h2>Infórmate, previene y respeta.</h2>
+                <p>El VIH no define a una persona. El respeto nos une.</p>
+                <a href="#fuentes" class="boton boton-blanco">
+                    Comparte información confiable
+                </a>
+            </div>
+        </section>
+
+        <section class="seccion" id="fuentes">
+            <div class="titulo-seccion">
+                <span>INFORMACIÓN CONFIABLE</span>
+                <h2>Fuentes y orientación</h2>
+                <p>Consulta organismos oficiales para ampliar tus conocimientos.</p>
+            </div>
+
+            <div class="fuentes">
+                <a href="https://www.who.int/es/news-room/fact-sheets/detail/hiv-aids"
+                   target="_blank" rel="noopener noreferrer">
+                    <strong>Organización Mundial de la Salud</strong>
+                    <span>Información sobre VIH y sida ↗</span>
+                </a>
+
+                <a href="https://www.gob.pe/minsa"
+                   target="_blank" rel="noopener noreferrer">
+                    <strong>Ministerio de Salud del Perú</strong>
+                    <span>Información y servicios de salud ↗</span>
+                </a>
+
+                <a href="https://www.gob.pe"
+                   target="_blank" rel="noopener noreferrer">
+                    <strong>Plataforma del Estado peruano</strong>
+                    <span>Busca centros y servicios oficiales ↗</span>
+                </a>
+            </div>
+
+            <p class="aviso">
+                Este sitio tiene fines educativos. No reemplaza la evaluación
+                ni la orientación de un profesional de salud.
+            </p>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <a class="logo logo-pie" href="#inicio">VIH<span>DA</span></a>
+        <p>Infórmate, Previene y Actúa · Campaña educativa de sensibilización</p>
+        <p>Promoviendo la prevención, el respeto y la no discriminación.</p>
+    </footer>
+
+</body>
+</html>
