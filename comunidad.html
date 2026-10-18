@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitos y FAQs - VIHDA</title>
+    <meta name="description" content="Cuestionario de mitos y verdades sobre el VIH, lenguaje sin estigma y preguntas frecuentes.">
+    <meta property="og:title" content="Mitos y FAQs - VIHDA">
+    <meta property="og:description" content="Cuestionario de mitos y verdades sobre el VIH, lenguaje sin estigma y preguntas frecuentes.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%97%EF%B8%8F%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <a href="#contenido" class="saltar">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <div class="nav-contenedor">
+            <a href="index.html" class="logo">VIH<span>DA</span></a>
+            <nav class="menu-navegacion" aria-label="Menú principal">
+                <a href="index.html">Inicio</a>
+                <a href="prevencion.html">Prevención y Pruebas</a>
+                <a href="tratamiento.html">Tratamiento y Salud</a>
+                <a href="estadisticas.html">Estadísticas</a>
+                <a href="comunidad.html" class="activo" aria-current="page">Mitos y FAQs</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido" class="seccion">
+
+        <div class="titulo-seccion">
+            <h2>Rompamos los Prejuicios</h2>
+            <p>Pon a prueba tus conocimientos respondiendo Verdadero o Falso.</p>
+        </div>
+
+        <div class="cuestionario">
+            <div class="pregunta">
+                <h3>1. ¿El VIH se transmite por un abrazo, un beso en la mejilla o dar la mano?</h3>
+                <div class="opciones">
+                    <button data-grupo="p1" data-respuesta="verdadero">VERDADERO</button>
+                    <button data-grupo="p1" data-respuesta="falso">FALSO</button>
+                </div>
+                <div id="r-p1" class="resultado" aria-live="polite"></div>
+            </div>
+            <div class="pregunta">
+                <h3>2. ¿Con el tratamiento adecuado una persona puede tener una vida normal?</h3>
+                <div class="opciones">
+                    <button data-grupo="p2" data-respuesta="verdadero">VERDADERO</button>
+                    <button data-grupo="p2" data-respuesta="falso">FALSO</button>
+                </div>
+                <div id="r-p2" class="resultado" aria-live="polite"></div>
+            </div>
+            <div class="pregunta">
+                <h3>3. ¿VIH y SIDA significan exactamente lo mismo?</h3>
+                <div class="opciones">
+                    <button data-grupo="p3" data-respuesta="verdadero">VERDADERO</button>
+                    <button data-grupo="p3" data-respuesta="falso">FALSO</button>
+                </div>
+                <div id="r-p3" class="resultado" aria-live="polite"></div>
+            </div>
+            <div class="pregunta">
+                <h3>4. ¿Si utilizo dos condones a la vez estoy el doble de protegido?</h3>
+                <div class="opciones">
+                    <button data-grupo="p4" data-respuesta="verdadero">VERDADERO</button>
+                    <button data-grupo="p4" data-respuesta="falso">FALSO</button>
+                </div>
+                <div id="r-p4" class="resultado" aria-live="polite"></div>
+            </div>
+            <div class="pregunta">
+                <h3>5. ¿El VIH afecta únicamente a personas homosexuales?</h3>
+                <div class="opciones">
+                    <button data-grupo="p5" data-respuesta="verdadero">VERDADERO</button>
+                    <button data-grupo="p5" data-respuesta="falso">FALSO</button>
+                </div>
+                <div id="r-p5" class="resultado" aria-live="polite"></div>
+            </div>
+            <div class="pregunta">
+                <h3>6. ¿Si una persona se ve completamente sana significa que no tiene VIH?</h3>
+                <div class="opciones">
+                    <button data-grupo="p6" data-respuesta="verdadero">VERDADERO</button>
+                    <button data-grupo="p6" data-respuesta="falso">FALSO</button>
+                </div>
+                <div id="r-p6" class="resultado" aria-live="polite"></div>
+            </div>
+        </div>
+
+        <div id="resumen-cuestionario" class="resumen-cuestionario" hidden>
+            <h3 id="puntaje"></h3>
+            <p id="mensaje-puntaje"></p>
+            <button type="button" id="boton-reiniciar" class="boton-reiniciar">Volver a intentar</button>
+        </div>
+
+        <div class="titulo-seccion espacio-arriba-grande">
+            <h2>Apoyar, No Rechazar</h2>
+            <p>El estigma y la discriminación aíslan, alejan a las personas de la atención médica y dañan su salud.</p>
+        </div>
+
+        <div class="bloque-flexible">
+            <img src="imagenes/ilustracion-apoyo.png" alt="Ilustración de una persona sentada y angustiada junto a una prueba de VIH, medicamentos y una jeringa">
+            <div>
+                <h3>Uso correcto del lenguaje</h3>
+                <div class="cuadro-lenguaje">
+                    <div class="cuadro-titulo">Evitemos estigmatizar</div>
+                    <div class="cuadro-cuerpo">
+                        <p>❌ Evita términos ofensivos como <s>"sidoso"</s> o <s>"enfermo de VIH"</s>.</p>
+                        <p>✅ Lo correcto es: <strong>"persona que vive con VIH"</strong>.</p>
+                        <p style="margin-top: 10px; color: var(--texto-suave);">No hace falta separar cubiertos, platos, baños ni ropa. El virus no se transmite por el aire ni por objetos de uso cotidiano.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bloque-testimonio">
+            <p>"Enterarme de mi diagnóstico fue duro por el miedo al rechazo. Cuando entendí qué es el TARGA, mi vida cambió: tomo mi pastilla todas las noches, trabajo con normalidad y mis controles médicos confirman que soy indetectable. El apoyo de mi familia fue mi mayor soporte."</p>
+            <span class="firma">— Testimonio ilustrativo (personaje ficticio creado para esta campaña)</span>
+        </div>
+
+        <div class="titulo-seccion espacio-arriba">
+            <h2>Preguntas Frecuentes (FAQs)</h2>
+            <p>Respuestas rápidas basadas en información del MINSA y la OMS.</p>
+        </div>
+
+        <div class="lista-faq">
+            <div class="pregunta">
+                <h3>Si mi pareja tiene VIH y yo no, ¿podemos tener hijos sin VIH?</h3>
+                <p>Sí, con acompañamiento médico. Una carga viral indetectable y las medidas de prevención indicadas por el equipo de salud permiten concebir y tener hijos sin la infección.</p>
+            </div>
+            <div class="pregunta">
+                <h3>¿Puedo trabajar o estudiar con normalidad en el Perú?</h3>
+                <p>Sí. Vivir con VIH no afecta tus capacidades intelectuales ni laborales, y la ley protege contra la discriminación.</p>
+            </div>
+            <div class="pregunta">
+                <h3>¿La prueba y el diagnóstico son confidenciales?</h3>
+                <p>Sí. En el Perú, la prueba y la historia clínica son confidenciales, y nadie puede revelar tu estado de salud sin tu autorización.</p>
+            </div>
+            <div class="pregunta">
+                <h3>¿Cuánto tiempo vive una persona que sigue su tratamiento?</h3>
+                <p>Con diagnóstico oportuno y tratamiento constante, la expectativa de vida es similar a la de la población general.</p>
+            </div>
+        </div>
+
+        <div class="caja-ayuda">
+            <h3>¿Dónde pedir ayuda o hacerte la prueba?</h3>
+            <ul>
+                <li><strong>Infosalud (MINSA):</strong> llama al <strong>113</strong>, gratuito, para orientación y ubicar tu establecimiento de salud más cercano.</li>
+                <li><strong>En Cusco:</strong> acude a tu centro de salud o a hospitales como el <strong>Hospital Regional del Cusco</strong> o el <strong>Hospital Antonio Lorena</strong>, y pregunta por el servicio de ITS/VIH (consejería y prueba).</li>
+                <li><strong>DIRESA Cusco:</strong> puede indicarte el establecimiento con atención de VIH más cercano a tu distrito.</li>
+            </ul>
+            <p class="nota-pequena">Confirma horarios y servicios disponibles antes de ir.</p>
+        </div>
+    </main>
+
+    <footer class="pie">
+        <p><strong>VIHDA</strong> - Campaña de Concientización y Prevención</p>
+        <p>&copy; <span id="anio-actual"></span> | Material educativo. No reemplaza la consulta médica.</p>
+        <p class="fuentes">Fuentes: <a href="https://www.dge.gob.pe/vih/" target="_blank" rel="noopener">CDC Perú - MINSA (situación epidemiológica del VIH)</a> · <a href="https://www.gob.pe/minsa" target="_blank" rel="noopener">MINSA</a> · <a href="https://www.who.int/es/health-topics/hiv-aids" target="_blank" rel="noopener">OMS</a> · <a href="https://www.unaids.org/es" target="_blank" rel="noopener">ONUSIDA</a>. Infografía: PLAFAM. Cartel: OMS. Algunas ilustraciones provienen de bancos de imágenes; verifica sus licencias antes de publicar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
